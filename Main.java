@@ -24,19 +24,19 @@ class RunningWorkout extends Workout{
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        RunningWorkout workout = new RunningWorkout();
+        RunningWorkout w = new RunningWorkout();
         System.out.println("Enter workout type: ");
-        workout.type = input.nextLine();
+        w.type = input.nextLine();
 
         System.out.println("Enter duration (minutes): ");
-        workout.duration = input.nextInt();
+        w.duration = input.nextInt();
 
         System.out.println("Enter distance (km): ");
-        workout.distance = input.nextDouble();
+        w.distance = input.nextDouble();
 
         System.out.println("------- Workout Summary --------");
-        workout.showWorkout();
-        workout.showDetails();
+        w.showWorkout();
+        w.showDetails();
 
 
 
